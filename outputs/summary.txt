@@ -1,0 +1,18 @@
+ELECTRICITY CONSUMPTION PATTERN ANALYSIS - SUMMARY
+==================================================
+Period            : 2023-01-01 00:00:00 -> 2023-12-31 23:00:00
+Records           : 8760
+Missing handled   : 43
+Total consumption : 10078.3 kWh
+Average per hour  : 1.150 kWh
+Peak hour of day  : 20:00
+Lowest hour       : 3:00
+Peak month        : July 2023
+Temp-usage corr   : 0.87
+Day-profile clusters: k=2 (silhouette=0.53, sizes=[132, 233])
+Anomalies detected: 47
+
+Forecast (train=6873, test=1719)
+  LinearRegression  MAE=0.222  RMSE=0.341  R2=0.658
+  RandomForest      MAE=0.097  RMSE=0.240  R2=0.831
+  Best model: RandomForest
